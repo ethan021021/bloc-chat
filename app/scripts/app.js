@@ -1,3 +1,5 @@
+var app;
+
 (function() {
   function config($locationProvider, $stateProvider) {
     $locationProvider
@@ -14,7 +16,7 @@
       });
   }
 
-  angular
+  app = angular
     .module('blocChat', ['ui.bootstrap', 'ui.router', 'firebase'])
     .config(config);
 })();

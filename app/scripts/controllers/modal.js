@@ -1,9 +1,11 @@
 (function() {
-  function ModalCtrl($uibModal) {
+  function ModalCtrl($uibModal, Room) {
     this.ethan = "Ethan";
+    this.addRoom = function(roomName) {
+      console.log(roomName);
+    };
   }
 
-  angular
-    .module('blocChat')
-    .controller('ModalCtrl', ['$uibModal', ModalCtrl]);
+  app
+  .controller('ModalCtrl', ['Room', '$uibModal', ModalCtrl]);
 })();
