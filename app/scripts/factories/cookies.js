@@ -13,7 +13,6 @@
               modalInstance.dismiss();
               return
             }
-
             alert('You need to enter a correct name!');
           };
         }

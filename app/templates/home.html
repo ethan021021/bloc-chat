@@ -18,11 +18,15 @@
       <li ng-repeat="m in landing.messages">
         <div>
           <h5 id="user">{{m.user}}</h5>
-          <h5 id="createdat">{{m.createdAt}}</h5>
+          <h5 id="createdat">{{m.createdAt | date:'shortTime'}}</h5>
         </div>
         <div style="clear: both;"></div>
         <p id="content">{{m.content}}</p>
       </li>
     </ul>
+    <div class="chatbar">
+      <input type="text" ng-model="message"></input>
+      <button ng-click="landing.sendMessage(message)">Send</button>
+    </div>
   </section>
 </div>
