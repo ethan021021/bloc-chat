@@ -13,15 +13,10 @@ var app;
         url: '/',
         controller: 'LandingCtrl as landing',
         templateUrl: '/templates/home.html'
-      })
-      .state('message', {
-        url: '/',
-        controller: 'MessageCtrl as message',
-        templateUrl: '/templates/home.html'
       });
   }
 
   app = angular
-    .module('blocChat', ['ui.bootstrap', 'ui.router', 'firebase'])
+    .module('blocChat', ['ui.bootstrap', 'ngCookies', 'ui.router', 'firebase'])
     .config(config);
 })();

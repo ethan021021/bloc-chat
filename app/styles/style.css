@@ -8,6 +8,11 @@
   width: 20%;
 }
 
+.sidebar h3 {
+  color: white;
+  margin: 3%;
+}
+
 ul {
   list-style: none;
   text-align: left;
