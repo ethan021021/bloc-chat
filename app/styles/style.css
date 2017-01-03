@@ -29,3 +29,39 @@ li {
   margin-bottom: 20% !important;
   /*margin-top: 20% !important;*/
 }
+
+.chat {
+  /*background-color: blue;*/
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 80%;
+}
+
+.roomheader {
+  margin-left: 3%;
+}
+
+.messages li {
+  background-color: #B7CBDE;
+}
+
+.messages li:nth-child(even) {
+  background-color: white;
+}
+
+.messages li {
+  padding: 1% 1% 1% 3%;
+}
+
+.messages li div #user {
+  float: left;
+  font-size: 16px;
+}
+
+.messages li div #createdat {
+  float: right;
+  font-size: 16px;
+}

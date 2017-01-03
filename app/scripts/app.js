@@ -13,6 +13,11 @@ var app;
         url: '/',
         controller: 'LandingCtrl as landing',
         templateUrl: '/templates/home.html'
+      })
+      .state('message', {
+        url: '/',
+        controller: 'MessageCtrl as message',
+        templateUrl: '/templates/home.html'
       });
   }
 

@@ -1,6 +1,11 @@
 (function () {
-  function LandingCtrl(Room, $uibModal, $uibModalInstance) {
+  function LandingCtrl(Room, Message, $uibModal) {
+    var ctrl = this;
     this.rooms = Room.rooms;
+    this.fetchMessages = function(roomName) {
+      ctrl.messages = Message.getByRoomId(roomName);
+      ctrl.currentRoom = roomName;
+    };
     this.openModal = function(param) {
       var modalInstance = $uibModal.open({
         templateUrl: '/templates/modal.html',
@@ -27,5 +32,5 @@
 
   angular
     .module('blocChat')
-    .controller('LandingCtrl', ['Room', '$uibModal', LandingCtrl]);
+    .controller('LandingCtrl', ['Room', 'Message', '$uibModal', LandingCtrl]);
 })();
