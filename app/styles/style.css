@@ -102,3 +102,9 @@ li {
   width: 70%;
   height: 100%;
 }
+
+@media (max-width: 400px) {
+  .chat {
+    padding-bottom: 5% !important;
+  }
+}
