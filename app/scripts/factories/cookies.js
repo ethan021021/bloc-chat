@@ -6,6 +6,7 @@
         templateUrl: '/templates/newuser.html',
         backdrop: 'static',
         keyboard: false,
+        size: 'sm',
         controller: function($scope) {
           $scope.addUser = function(name) {
             if (name) {
